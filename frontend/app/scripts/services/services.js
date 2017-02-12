@@ -2,7 +2,7 @@
 
 var services = angular.module('ngdemoApp.services', ['ngResource']);
 
-var baseUrl = 'http://localhost\\:8080';
+var baseUrl = 'http://localhost:8080';
 
 services.factory('DummyFactory', function ($resource) {
     return $resource(baseUrl + '/ngdemo/web/dummy', {}, {
